@@ -6,7 +6,7 @@ import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot( document.getElementById( 'root' ) ).render(
 	<React.StrictMode>
-		<BrowserRouter basename='/practice-app'>
+		<BrowserRouter basename='/mern-quickstart'>
 			<App />
 		</BrowserRouter>
 	</React.StrictMode>,
