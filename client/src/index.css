@@ -1,0 +1,33 @@
+/* RESET ------------------------------------------------------------- */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+#root, html, body, div, main, nav, h1, h2, h3, p, a, button, form, input, select {
+	margin: 0;
+	padding: 0;
+}
+img, svg {
+	display: block;
+	max-width: 100%;
+}
+input, button, select {
+	font: inherit;
+}
+h1, h2, h3, p {
+	overflow-wrap: break-word;
+}
+p {
+	hyphens: auto;
+}
+
+body {
+	display: flex;
+	justify-content: center;
+}
+
+#root {
+	width: 100%;
+	padding: 40px 30px;
+}
