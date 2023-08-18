@@ -12,15 +12,15 @@ class ApiServices {
 	}
 
 	postData( data ) {
-		return this.api.post( '/api', data );
+		return this.api.post( '/api', { content: data } );
 	}
 
 	updateData( data ) {
-		return this.api.put( '/api', data );
+		return this.api.put( `/api/${data.updateID}`, { content: data.content } );
 	}
 
-	deleteData() {
-		return this.api.delete( '/api' );
+	deleteData( deleteID ) {
+		return this.api.delete( `/api/${deleteID}` );
 	}
 }
 
